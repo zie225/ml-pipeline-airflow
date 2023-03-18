@@ -7,7 +7,7 @@ This project is an example of how you can improve the two parts of any Machine L
 * **Data Validation** is the process of ensuring that data is present, correct, and meaningful. Ensuring the quality of your data through automated validation checks is a critical step in building data pipelines at any organization.
 * **Model validation** occurs after you successfully train the model given the new data. We evaluate and validate the model before it's promoted to production. Ideally, the offline model validation step should include.
 
-![]([https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png])
+![](https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png)
 
 
 
