@@ -8,16 +8,16 @@ This project is an example of how you can improve the two parts of any Machine L
 * **Model validation** occurs after you successfully train the model given the new data. We evaluate and validate the model before it's promoted to production. Ideally, the offline model validation step should include.
 
 <p align="center">
-  <img src="https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png" width="300" title="Machine Learnig Pipeline">
+  <img src="[https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/main/img/pipeline.png)" width="300" title="Machine Learnig Pipeline">
 </p>
 
-You can read more details in the [article on Medium](https://medium.com/@danil.baibak/machine-learning-in-production-using-apache-airflow-91d25a4d8152).
+
 
 ## Installation
 
 The project is dockerized and you have two options to run it:
-* `make pull` - the [prebuilt image](https://hub.docker.com/r/dbaibak/docker_airflow) will be pulled from the Docker Hub;
-* `make build` - you can also build the [Docker image](https://github.com/DanilBaibak/ml-in-production/tree/master/docker) by yourself;
+* `make pull` - the [prebuilt image]([https://hub.docker.com/r/dbaibak/docker_airflow](https://github.com/zie225/ml-pipeline-airflow)) will be pulled from the Docker Hub;
+* `make build` - you can also build the [Docker image]([https://github.com/DanilBaibak/ml-in-production/tree/master/docker](https://github.com/zie225/ml-pipeline-airflow/tree/main/docker)) by yourself;
 * `make init_config` will initialize all necessary configs;
 * `make up_d` will start up your application detached mode. After the application is started, you can easily have access to the project by the link http://localhost:8080/
 
