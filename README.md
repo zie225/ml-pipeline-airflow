@@ -17,7 +17,7 @@ This project is an example of how you can improve the two parts of any Machine L
 ## Installation
 
 The project is dockerized and you have two options to run it:
-* `make pull` - the [Here is]([https://github.com/zie225/ml-pipeline-airflow]) will be pulled from the Docker Hub;
+* `make pull` - the [Here is](https://github.com/zie225/ml-pipeline-airflow) will be pulled from the Docker Hub;
 
 * `make build` - you can also build the [Docker image](https://github.com/zie225/ml-pipeline-airflow/tree/main/docker) by yourself;
 
