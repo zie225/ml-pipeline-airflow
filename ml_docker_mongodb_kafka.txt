@@ -1,0 +1,120 @@
+1. creer un environnement python 3.8 :
+# conda create -n ml-mongodb anaconda python=3.9.0
+# conda create -n ml-mongodb anaconda python=3.8.0
+# conda activate ml-mongodb
+# conda install ipykernel
+# python -m ipykernel install --user --name ml-mongodb --display-name "Env ml-mongodb"
+# pip install jupyter
+# pip install pycaret[full]==2.3.10
+# pip install kafka==1.3.5
+# pip install kafka-python
+# pip install numpy==1.19.5
+# pip install pandas==1.4.3
+# pip install pymongo==3.12.0
+
+Une fois docker yml configurer,
+
+Une fois que c’est fait, ouvrez votre terminal de commande, naviguez jusqu’au dossier où vous avez sauvegardé 
+docker-compose.yml et lancez la commande suivante :
+
+docker-compose -f docker-compose.yml up -d
+docker-compose down
+
+
+
+Un téléchargement devrait se lancer. Une fois qu’il est terminé, lancez la commander docker ps pour vérifier que
+tout s’est bien lancé.
+
+2.Data_generator
+
+Data generator pour les donnees ou collecte de donnees 
+
+3.Producer
+
+producer pour le data streaming, envoyer les messages( data) au broker(topic) creer sur http://localhost:9000/ 
+
+que consumer va recevoir en messages.
+
+4.Consumer
+
+consumer pour le streaming de machine learning, d'ou ML pipeline, consumer recoit les messages envoyer par 
+producer pour le stream de ML
+
+
+Airflow : https://github.com/hamed225/airbender
+Airflow for image : https://github.com/btphan95/greenr-airflow/tree/master/scripts
+https://github.com/rahul765/Machine-Learning-Pipelines#readme
+
+airflow:https://github.com/NicoloAlbanese/airflow-ml-pipeline-mvp ( my beste )
+
+
+airflow: https://github.com/hamed225/ml-in-production (mon seconde meilleur )
+  
+        
+Avec l'installation des packages python qu'on a besoin pour Apache airflow, nous devrons parametrer le dockerfile pour les
+installations, ensuite mettre le dockerfile dans le fichier docker-compose.yml comme suite:
+
+version: '3'
+x-airflow-common:
+  &airflow-common
+  build:
+    context: .
+    dockerfile: docker\Dockerfile
+
+Le  lien du parametre : https://airflow.apache.org/docs/docker-stack/build.html#quick-start-scenarios-of-image-extending
+
+-./data:/opt/airflow/data
+- ./models:/opt/airflow/models
+
+Toujours ajouter ces deux dernier le docker-compose.yml , la partie volume
+
+meilleur docker-compose.yml : https://github.com/marclamberti/docker-airflow/blob/main/docker-compose.yml
+
+postgresql+psycopg2://user:password@postgres/db
+
+https://towardsdatascience.com/end-to-end-machine-learning-pipeline-with-docker-and-apache-airflow-from-scratch-35f6a75f57ad
+
+
+ AVANT , IL FAUT TOUJOURS CREER UN ENVIRONEMENT SUR DOCKER AVEC LE DOSSIER DE LA PIPELINE D'AIRFLOW
+docker container exec -it airflow_webserver bash
+
+# Checking the saved models
+cd /opt/airflow/models
+ls -l
+
+# Checking the saved data
+cd /opt/airflow/data
+ls -l
+
+python
+import pandas as pd
+from sqlalchemy import create_engine
+engine = create_engine('postgresql+psycopg2://airflow:airflow@postgres/airflow')
+pd.read_sql('SELECT * FROM experiments', engine)
+
+pd.read_sql('SELECT * FROM batch_data', engine)
+
+
+
+ML_FLOW
+
+https://github.com/burakince/mlflow
+
+https://github.com/hamed225/incremental_training
+
+https://github.com/zie225/mlflow_docker-compose
+
+
+http://localhost:9021/login
+
+
+
+
+ Copy this key and put it in a secure place. You won't be able to view this key again after closing this modal:
+
+pnu_zwVwqfD2e1xQikC9ZO5OSqSpBXCScL2azsPp
+
+Or run this command to save the key to your active profile:
+
+
+prefect cloud login -k pnu_zwVwqfD2e1xQikC9ZO5OSqSpBXCScL2azsPp 
