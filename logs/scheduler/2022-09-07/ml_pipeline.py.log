@@ -1,0 +1,10 @@
+[2022-09-07 14:19:43,603] {processor.py:163} INFO - Started process (PID=294) to work on /opt/airflow/dags/ml_pipeline.py
+[2022-09-07 14:19:43,634] {processor.py:625} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2022-09-07 14:19:43,653] {logging_mixin.py:109} INFO - [2022-09-07 14:19:43,650] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2022-09-07 14:20:09,079] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakValueDictionary.__init__.<locals>.remove at 0x7f81a83c9d40>
+[2022-09-07 14:20:09,080] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2022-09-07 14:20:09,086] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.7/weakref.py", line 109, in remove
+[2022-09-07 14:20:09,089] {logging_mixin.py:109} WARNING -     def remove(wr, selfref=ref(self), _atomic_removal=_remove_dead_weakref):
+[2022-09-07 14:20:09,090] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/manager.py", line 490, in _exit_gracefully
+[2022-09-07 14:20:09,092] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2022-09-07 14:20:09,092] {logging_mixin.py:109} WARNING - SystemExit: 0
