@@ -18,7 +18,8 @@ This project is an example of how you can improve the two parts of any Machine L
 
 The project is dockerized and you have two options to run it:
 * `make pull` - the [Here is]([https://github.com/zie225/ml-pipeline-airflow]) will be pulled from the Docker Hub;
-* `make build` - you can also build the [Docker image]([https://github.com/zie225/ml-pipeline-airflow/tree/main/docker]) by yourself;
+
+* `make build` - you can also build the [Docker image](https://github.com/zie225/ml-pipeline-airflow/tree/main/docker) by yourself;
 
 * `make init_config` will initialize all necessary configs;
 * `make up_d` will start up your application detached mode. After the application is started, you can easily have access to the project by the link http://localhost:8080/
