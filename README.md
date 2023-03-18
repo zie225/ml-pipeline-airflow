@@ -7,17 +7,19 @@ This project is an example of how you can improve the two parts of any Machine L
 * **Data Validation** is the process of ensuring that data is present, correct, and meaningful. Ensuring the quality of your data through automated validation checks is a critical step in building data pipelines at any organization.
 * **Model validation** occurs after you successfully train the model given the new data. We evaluate and validate the model before it's promoted to production. Ideally, the offline model validation step should include.
 
-<p align="center">
-  <img src="[https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png)" width="100" title="Machine Learnig Pipeline">
-</p>
+![](https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png)
+
+
+
 
 
 
 ## Installation
 
 The project is dockerized and you have two options to run it:
-* `make pull` - the [prebuilt image]([https://hub.docker.com/r/dbaibak/docker_airflow]( https://github.com/zie225/ml-pipeline-airflow )) will be pulled from the Docker Hub;
-* `make build` - you can also build the [Docker image]([https://github.com/DanilBaibak/ml-in-production/tree/master/docker](https://github.com/zie225/ml-pipeline-airflow/tree/main/docker)) by yourself;
+* `make pull` - the [Here is](https://github.com/zie225/ml-pipeline-airflow) will be pulled from the Docker Hub;
+* `make build` - you can also build the [Docker image]([https://github.com/zie225/ml-pipeline-airflow/tree/main/docker]) by yourself;
+
 * `make init_config` will initialize all necessary configs;
 * `make up_d` will start up your application detached mode. After the application is started, you can easily have access to the project by the link http://localhost:8080/
 
