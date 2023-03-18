@@ -8,7 +8,7 @@ This project is an example of how you can improve the two parts of any Machine L
 * **Model validation** occurs after you successfully train the model given the new data. We evaluate and validate the model before it's promoted to production. Ideally, the offline model validation step should include.
 
 <p align="center">
-  <img src="[https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png)" width="300" title="Machine Learnig Pipeline">
+  <img src="[https://github.com/DanilBaibak/ml-in-production/blob/master/images/ml_pipeline.png](https://github.com/zie225/ml-pipeline-airflow/blob/ma/img/pipeline.png)" width="100" title="Machine Learnig Pipeline">
 </p>
 
 
