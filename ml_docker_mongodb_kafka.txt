@@ -21,6 +21,8 @@ docker-compose -f docker-compose.yml up -d
 docker-compose down
 
 
+POUR Dockerfile,pour installation des packages naviguer jusqu'au dossier docker: docker build - < Dockerfile    
+
 
 Un téléchargement devrait se lancer. Une fois qu’il est terminé, lancez la commander docker ps pour vérifier que
 tout s’est bien lancé.
